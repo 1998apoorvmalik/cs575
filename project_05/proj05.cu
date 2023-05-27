@@ -159,17 +159,17 @@ MonteCarlo(
     dsuccesses[gid] = 0;
 
     // randomize everything:
-    float holeAx = dholeaxs[gid];
-    float holeAy = dholeays[gid];
-    float holeAr = dholears[gid];
+    float holeax = dholeaxs[gid];
+    float holeay = dholeays[gid];
+    float holear = dholears[gid];
 
-    float holeBx = dholebxs[gid];
-    float holeBy = dholebys[gid];
-    float holeBr = dholebrs[gid];
+    float holebx = dholebxs[gid];
+    float holeby = dholebys[gid];
+    float holebr = dholebrs[gid];
 
-    float holeCx = dholecxs[gid];
-    float holeCy = dholecys[gid];
-    float holeCr = dholecrs[gid];
+    float holecx = dholecxs[gid];
+    float holecy = dholecys[gid];
+    float holecr = dholecrs[gid];
 
     float da = Length(PinAx - holeax, PinAy - holeay);
     if (da + PinAr <= holear)
